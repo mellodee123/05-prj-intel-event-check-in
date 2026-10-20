@@ -25,19 +25,20 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       135deg,
-      rgba(0, 153, 219, 0.9) 0%,
-      rgba(0, 104, 181, 0.9) 50%,
-      rgba(0, 60, 116, 0.9) 100%
+      rgba(0, 90, 158, 0.96) 0%,
+      rgba(0, 77, 135, 0.96) 50%,
+      rgba(0, 60, 116, 0.96) 100%
     ),
     url("img/bg.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 60px 32px;
+  padding: 22px 24px;
   color: #fff;
-  margin-bottom: 34px;
+  margin-bottom: 18px;
 }
 
 .hero-content {
@@ -46,17 +47,17 @@ body {
 }
 
 .intel-logo {
-  max-width: 100px;
-  margin-bottom: 25px;
+  max-width: 68px;
+  margin-bottom: 6px;
   filter: brightness(0) invert(1);
 }
 
 .hero h1 {
-  font-size: 46px;
+  font-size: 31px;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
   letter-spacing: -0.5px;
   color: white;
 }
@@ -64,12 +65,12 @@ body {
 .hero-divider {
   width: 100px;
   height: 3px;
-  margin: 26px auto;
+  margin: 10px auto;
   background-color: #00c7fd;
 }
 
 .hero p {
-  font-size: 22px;
+  font-size: 15px;
   letter-spacing: 1px;
   font-weight: 300;
   color: white;
@@ -107,7 +108,7 @@ body {
 input {
   flex: 1;
   padding: 16px 20px;
-  border: 2px solid rgba(0, 0, 0, 0.08);
+  border: 2px solid #64748b;
   border-radius: 12px;
   font-size: 17px;
   font-weight: 500;
@@ -119,12 +120,12 @@ input {
 }
 
 input:focus {
-  border-color: #0071c5;
+  border-color: #005a9e;
   box-shadow: 0 0 0 4px rgba(0, 113, 197, 0.15);
 }
 
 button {
-  background-color: #0071c5;
+  background-color: #005a9e;
   color: white;
   border: none;
   border-radius: 12px;
@@ -175,15 +176,14 @@ button .fas {
   gap: 6px;
   margin-bottom: 15px;
   font-size: 17px;
-  color: #64748b;
+  color: #475569;
 }
 
 /* Attendance tracker styling */
 .attendance-tracker {
-  max-width: 700px;
-  width: 90%;
-  margin: 0 auto 40px;
-  padding: 0 20px;
+  max-width: 500px;
+  width: 100%;
+  margin: 24px auto 0;
   text-align: center;
 }
 
@@ -194,25 +194,25 @@ button .fas {
   gap: 6px;
   margin-bottom: 15px;
   font-size: 17px;
-  color: #64748b;
+  color: #475569;
 }
 
 #attendeeCount {
-  color: #0071c5;
+  color: #005a9e;
   font-size: 24px;
   font-weight: 700;
   margin: 0 2px;
 }
 
 .attendance-header i {
-  color: #0071c5;
+  color: #005a9e;
   font-size: 20px;
   margin-right: 4px;
 }
 
 /* Max attendees text */
 .attendance-header span:last-child {
-  color: #64748b;
+  color: #475569;
   font-size: 17px;
 }
 
@@ -231,8 +231,8 @@ button .fas {
 .progress-bar {
   width: 0%;
   height: 100%;
-  background-color: #0071c5;
-  background-image: linear-gradient(90deg, #0071c5, #00aeef);
+  background-color: #005a9e;
+  background-image: linear-gradient(90deg, #005a9e, #00aeef);
   border-radius: 10px;
   transition: width 0.6s ease;
 }
@@ -258,9 +258,15 @@ button .fas {
   color: #003c71;
 }
 
+.celebration-message {
+  background-color: #e6f4ea;
+  border: 2px solid #2f855a;
+  color: #1f5d3f;
+}
+
 /* Counter */
 #attendeeCount {
-  color: #0071c5;
+  color: #005a9e;
   font-size: 24px;
   font-weight: 700;
   margin: 0 2px;
@@ -270,17 +276,17 @@ button .fas {
 .footer {
   text-align: center;
   padding: 40px 20px;
-  color: #94a3b8;
+  color: #475569;
   font-size: 14px;
 }
 
 .footer-link {
-  color: #64748b;
+  color: #475569;
   text-decoration: none;
 }
 
 .footer-link:hover {
-  color: #0071c5;
+  color: #005a9e;
   text-decoration: underline;
 }
 
@@ -294,7 +300,7 @@ button .fas {
 
 select {
   padding: 16px;
-  border: 2px solid rgba(0, 0, 0, 0.08);
+  border: 2px solid #64748b;
   border-radius: 12px;
   font-size: 17px;
   font-weight: 500;
@@ -312,7 +318,7 @@ select {
 }
 
 .team-stats h3 {
-  color: #64748b;
+  color: #475569;
   font-size: 16px;
   margin-bottom: 20px;
 }
@@ -348,37 +354,198 @@ select {
   color: #475569;
 }
 
+.attendee-roster {
+  margin-top: 28px;
+  text-align: left;
+}
+
+.attendee-roster h4 {
+  margin: 0 0 12px;
+  color: #475569;
+  font-size: 15px;
+}
+
+.attendee-list {
+  max-height: 320px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+  border-top: 1px solid #e2e8f0;
+}
+
+.attendee-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #fff;
+}
+
+.attendee-list li:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.attendee-name {
+  color: #334155;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.attendee-team {
+  color: #475569;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+.attendee-empty {
+  margin: 0;
+  padding: 12px 14px;
+  color: #475569;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hero {
-    padding: 35px 20px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    text-align: left;
   }
+
+  .hero-content {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    column-gap: 12px;
+    row-gap: 2px;
+    align-items: center;
+    text-align: left;
+  }
+
+  .intel-logo {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 44px;
+    max-width: 100%;
+    margin: 0;
+  }
+
   .hero h1 {
-    font-size: 38px;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    font-size: 20px;
   }
+
+  .hero-divider {
+    display: none;
+  }
+
+  .hero p {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 1.3;
+  }
+
+  .attendance-tracker {
+    width: 100%;
+    margin: 20px 0 0;
+  }
+
+  .attendance-header {
+    justify-content: flex-start;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+
+  #attendeeCount {
+    font-size: 20px;
+  }
+
+  .progress-container {
+    height: 12px;
+    margin: 8px 0 0;
+  }
+
   .container {
-    padding: 32px;
-    margin: 0 15px 30px;
+    width: auto;
+    margin: 0 12px 16px;
+    padding: 18px 14px;
+    border-radius: 14px;
+  }
+
+  .check-in {
+    padding: 16px 12px;
+    border-radius: 12px;
+  }
+
+  .form-label {
+    margin-bottom: 10px;
   }
 
   .form-group {
+    gap: 10px;
+  }
+
+  .input-wrapper {
+    gap: 8px;
     flex-direction: column;
   }
 
   input,
+  select {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    font-size: 16px;
+  }
+
   button {
     width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    font-size: 16px;
   }
 
-  button {
-    height: 50px;
-  }
-
-  .input-wrapper {
-    flex-direction: column;
+  #greeting {
+    padding: 12px;
+    font-size: 15px;
   }
 
   .teams-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .team-card {
+    min-width: 0;
+    padding: 10px 6px;
+    border-radius: 10px;
+  }
+
+  .team-name {
+    font-size: 12px;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .attendee-roster {
+    margin-top: 18px;
+  }
+
+  .attendee-list li {
+    gap: 8px;
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+
+  .footer {
+    padding: 18px 14px;
+    font-size: 12px;
   }
 }
